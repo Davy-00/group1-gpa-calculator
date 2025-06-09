@@ -81,8 +81,3 @@ Each team member focused on their specialized area while collaborating through G
 4. Push to branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is created for educational purposes as part of a JavaScript learning assignment.
-
----
