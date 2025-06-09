@@ -1,10 +1,10 @@
-# 🎓 GPA Calculator (JavaScript)
+# GPA Calculator (JavaScript)
 
 This is a simple GPA Calculator built using **pure JavaScript**, **HTML**, and **CSS**. Users can add assignments, input grades (out of 5), and see their GPA updated in real time.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add assignments with a name and grade (0–5)
 - GPA updates instantly with every new entry
@@ -14,7 +14,7 @@ This is a simple GPA Calculator built using **pure JavaScript**, **HTML**, and *
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5  
 - CSS3  
@@ -23,7 +23,7 @@ This is a simple GPA Calculator built using **pure JavaScript**, **HTML**, and *
 
 ---
 
-## 👥 Group Members
+## Group Members
 
 - Ayomide (Team Lead)  
 - Paul Masamvu  
@@ -33,7 +33,7 @@ This is a simple GPA Calculator built using **pure JavaScript**, **HTML**, and *
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 gpa-calculator/
