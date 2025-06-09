@@ -1,42 +1,39 @@
-# JavaScript GPA Calculator
+# 🎓 GPA Calculator (JavaScript)
 
-A dynamic web application that allows students to track their assignments and calculate their GPA in real-time.
+This is a simple GPA Calculator built using **pure JavaScript**, **HTML**, and **CSS**. Users can add assignments, input grades (out of 5), and see their GPA updated in real time.
 
-## Features
+---
 
-- **Add Assignments**: Input assignment names and grades (out of 5)
-- **Real-time GPA Calculation**: Automatically updates GPA as assignments are added
-- **Assignment History**: View all entered assignments on the page
-- **Console Logging**: Press "S" to log all data to the browser console
-- **Data Persistence**: (Optional) Save entries using localStorage for persistence across sessions
+## 🚀 Features
 
-## Tech Stack
+- Add assignments with a name and grade (0–5)
+- GPA updates instantly with every new entry
+- View all submitted assignments in a list
+- Press **"S"** key to log all data to the browser console
+- Entries are saved using `localStorage` so they persist after page reload
 
-- **HTML5**: Semantic structure and form elements
-- **CSS3**: Clean, responsive styling
-- **Vanilla JavaScript**: Core functionality without external libraries
-- **GitHub**: Version control and collaboration
+---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-1. Clone the repository:
-   ```bash
-   git clone [repository-url]
-   ```
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)  
+- Git + GitHub for collaboration  
 
-2. Open `index.html` in your web browser
+---
 
-3. Start adding assignments and watch your GPA calculate automatically!
+## 👥 Group Members
 
-## Usage
+- Ayomide (Team Lead)  
+- Paul Masamvu  
+- Belise Kalisa
+- Davy Dushimiyimana
+- Bienvenure Cedrick  
 
-1. Enter an assignment name in the text field
-2. Input a grade (0-5) in the grade field
-3. Click "Add Assignment" or press Enter
-4. View your current GPA and assignment list
-5. Press "S" key to log all data to console
+---
 
-## File Structure
+## 📁 Project Structure
 
 ```
 gpa-calculator/
@@ -81,3 +78,8 @@ Each team member focused on their specialized area while collaborating through G
 4. Push to branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
+## License
+
+This project is created for educational purposes as part of a JavaScript learning assignment.
+
+---
