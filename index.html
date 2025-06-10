@@ -1,24 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GPA Calculator</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>GPA Calculator</h1>
-  <form id="assignment-form">
-    <input type="text" id="assignment-name" placeholder="Assignment Name">
-    <input type="number" id="assignment-grade" placeholder="Grade (out of 5)" min="0" max="5">
-    <button type="submit">Add Assignment</button>
-  </form>
+    <div class="container">
+        <header>
+            <h1>🎓 GPA Calculator</h1>
+            <p>Track your assignments and calculate your GPA in real-time</p>
+        </header>
 
-  <h2>Assignments</h2>
-  <ul id="assignmentList"></ul>
+        <main>
+            <section class="input-section">
+                <div class="form-container">
+                    <h2>Add Assignment</h2>
+                    <form id="assignment-form">
+                        <div class="input-group">
+                            <label for="assignment-name">Assignment Name:</label>
+                            <input 
+                                type="text" 
+                                id="assignment-name" 
+                                placeholder="e.g., Math Quiz 1"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="assignment-grade">Grade (0-5):</label>
+                            <input 
+                                type="number" 
+                                id="assignment-grade" 
+                                min="0" 
+                                max="5" 
+                                step="0.1"
+                                placeholder="e.g., 4.5"
+                                required
+                            >
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">📝 Add to Memory</button>
+                    </form>
+                    
+                    <div class="storage-controls">
+                        <button type="button" id="save-btn" class="btn-secondary">💾 Save All to Storage</button>
+                        <button type="button" id="clear-all-btn" class="btn-danger">🗑️ Clear All Data</button>
+                    </div>
+                </div>
+            </section>
 
-  <h2>Current GPA: <span id="gpaDisplay">0.00</span></h2>
+            <section class="results-section">
+                <div class="gpa-display">
+                    <h2>Current GPA</h2>
+                    <div class="gpa-value" id="gpa-display">0.00</div>
+                    <div class="total-assignments">
+                        Total Assignments: <span id="total-count">0</span>
+                    </div>
+                    <div class="storage-status" id="storage-status">
+                        ✅ All data saved
+                    </div>
+                </div>
+            </section>
 
-  <script src="script.js"></script>
+            <section class="assignments-section">
+                <h2>Assignment History</h2>
+                <div class="legend">
+                    <span class="legend-item">📝 Unsaved (Memory only)</span>
+                    <span class="legend-item">💾 Saved to Storage</span>
+                </div>
+                <div id="assignments-list" class="assignments-container">
+                    <p class="no-assignments">No assignments added yet. Start by adding your first assignment!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="instructions">
+                <p><strong>How it works:</strong></p>
+                <ul>
+                    <li><strong>Add Assignment:</strong> Saves to memory only (temporary)</li>
+                    <li><strong>Save All to Storage:</strong> Saves all current assignments to localStorage</li>
+                    <li><strong>Delete:</strong> Removes from memory (doesn't auto-save)</li>
+                    <li>Press <kbd>S</kbd> key to log all data to console</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Processing...</p>
+    </div>
+
+    <!-- Success message -->
+    <div id="success-message" class="message success hidden">
+        Assignment added to memory!
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
